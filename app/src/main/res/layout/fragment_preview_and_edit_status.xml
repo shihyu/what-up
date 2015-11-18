@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/status_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:id="@+id/status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:hint="@string/hint_status_text"
+        android:textColorHint="#555555"
+        android:textSize="@dimen/font_base"
+        android:maxLength="@integer/status_text_max_length"
+        android:background="@drawable/status_text_bg"/>
+
+
+    <ImageView
+        android:id="@+id/return_image_view"
+        android:layout_width="@dimen/common_circle_btn_size"
+        android:layout_height="@dimen/common_circle_btn_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/common_circle_btn_margin"
+        android:layout_marginTop="@dimen/common_circle_btn_margin"
+        android:src="@drawable/top_bar_back_btn_bg"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_divider_height_mid">
+
+        <ImageView
+            android:id="@+id/text_image_view"
+            android:layout_width="@dimen/common_circle_btn_size"
+            android:layout_height="@dimen/common_circle_btn_size"
+            android:layout_marginRight="40dp"
+            android:visibility="gone"
+            android:src="@drawable/text_btn_selector"/>
+
+        <ImageView
+            android:id="@+id/send_image_view"
+            android:layout_width="@dimen/common_circle_btn_size"
+            android:layout_height="@dimen/common_circle_btn_size"
+            android:src="@drawable/send_btn_selector"/>
+    </LinearLayout>
+
+</RelativeLayout>

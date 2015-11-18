@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--要求：
+    （select_image_from_native_btn_bg_selector）手机限制11位
+    （2）点击自动关联数字键盘
+    -->
+    <EditText
+        android:id="@+id/phone_number_edit_text"
+        style="@style/CommonEidtText"
+        android:layout_marginBottom="@dimen/common_divider_height_small"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:layout_marginTop="@dimen/common_circle_btn_margin"
+        android:drawableLeft="@drawable/ic_phone"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:maxLength="11"/>
+
+    <!--
+    密码输入框，要求：
+    （select_image_from_native_btn_bg_selector）长度限制12位
+    （2）由数字和英文字母组成
+    -->
+    <EditText
+        android:id="@+id/password_edit_text"
+        style="@style/CommonEidtText"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:digits="@string/digits_for_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/hint_input_password"
+        android:inputType="textPassword"
+        android:maxLength="12"
+        android:password="true"/>
+
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/CommonBtn"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:layout_marginTop="@dimen/common_divider_height_mid"
+        android:background="@drawable/common_orange_btn_bg_selector"
+        android:text="@string/login"/>
+
+    <TextView
+        android:id="@+id/forget_password_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginTop="@dimen/common_circle_btn_margin"
+        android:text="@string/forget_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_base"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_divider_height_mid"
+        android:gravity="center"
+        android:text="@string/use_third_party_account_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_plus_1"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/common_circle_btn_size"
+            android:layout_height="@dimen/common_circle_btn_size"
+            android:layout_marginRight="@dimen/common_divider_height_mid"
+            android:id="@+id/login_qq_btn"
+            android:src="@drawable/login_qq_btn_bg_selector"/>
+
+        <ImageView
+            android:layout_width="@dimen/common_circle_btn_size"
+            android:layout_height="@dimen/common_circle_btn_size"
+            android:layout_marginRight="@dimen/common_divider_height_mid"
+            android:id="@+id/login_weixin_btn"
+            android:src="@drawable/login_weixin_btn_bg_selector"/>
+
+        <ImageView
+            android:layout_width="@dimen/common_circle_btn_size"
+            android:layout_height="@dimen/common_circle_btn_size"
+            android:id="@+id/login_sina_btn"
+            android:src="@drawable/login_sina_btn_bg_selector"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

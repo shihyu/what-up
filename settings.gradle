@@ -1,0 +1,7 @@
+include ':app'
+
+include ':common-library'
+project(':common-library').projectDir = new File('../internal-libraries/library')
+
+include ':pull-to-refresh'
+project(':pull-to-refresh').projectDir = new File('../pull-to-refresh/library')

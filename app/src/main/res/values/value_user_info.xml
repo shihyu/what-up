@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="personal_homepage">个人主页</string>
+    <color name="user_introduce_text">#c2c2c2</color>
+    <dimen name="user_avatar_border_width">4dp</dimen>
+    <color name="user_avatar_border_color">#4cfbfbfb</color>
+
+
+    <!--用户状态列表-->
+    <dimen name="status_image_view_width">150dp</dimen>
+    <dimen name="status_image_view_height">99dp</dimen>
+
+    <dimen name="user_status_list_item_width">185.5dp</dimen>
+    <dimen name="user_status_list_item_height">155dp</dimen>
+
+    <!--举报-->
+    <string name="denounce">举 报</string>
+    <string name="denounce_reason_1">垃圾营销</string>
+    <string name="denounce_reason_2">淫秽信息</string>
+    <string name="denounce_reason_3">敏感信息</string>
+    <string name="denounce_reason_4">骚扰我</string>
+    <string name="denounce_reason_5">虚假中奖</string>
+
+    <!--编辑资料-->
+    <string name="edit_user_info">编辑资料</string>
+    <string name="hint_introduce">简单介绍下自己</string>
+
+</resources>

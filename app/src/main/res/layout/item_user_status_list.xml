@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/user_status_list_item_width"
+        android:layout_height="@dimen/user_status_list_item_height"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/user_status_list_item_bg_n"
+        android:paddingBottom="14dp"
+        android:paddingLeft="26dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:id="@+id/user_status_created_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_status_iv"
+            android:layout_alignParentRight="true"
+            android:text="2015-12-12  21:30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_minus_1"/>
+
+        <ImageView
+            android:id="@+id/user_status_iv"
+            android:layout_width="@dimen/status_image_view_width"
+            android:layout_height="@dimen/status_image_view_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

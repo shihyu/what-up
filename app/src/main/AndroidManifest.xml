@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="cn.wehax.whatup"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <application
+        android:name="cn.wehax.whatup.WhatUpApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".vp.splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".vp.main.impl.ARMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".vp.guide.GuideActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.chat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+
+        <activity
+            android:name=".vp.login.choose.ChooseLoginOrRegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.login.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.login.register.cell_register.CellRegisterActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.login.register.set_password.SetPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.relation.RelationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+
+            android:name=".vp.login.complete_user_info.CompleteUserInfoActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.login.forget_password.retrieve_password.RetrievePasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.login.forget_password.reset_password.ResetPasswordActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".support.image.camera.CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".support.image.album.AlbumActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".support.image.album.SelectImageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".support.image.crop.CropActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.user_info.personal.PersonalHomepageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.user_info.other.OtherHomepageActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.user_info.denounce.DenounceActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.setting.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".vp.setting.BubbleSetting.BubbleSetActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.user_info.edit.EditUserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <!--图片预览-->
+        <activity
+            android:name=".support.image.album.ImagePreviewActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".vp.imageviewer.ImageViewerActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/NoAnimationTheme"/>
+
+        <activity
+            android:name=".vp.main.preview_and_edit_status.PreviewAndEditStatusActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--ShareSDK-->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+
+        <!--微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- LeanCloud 推送 -->
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <!--保证应用在关闭的情况下也可以收到推送-->
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="cn.wehax.whatup.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="cn.wehax.whatup.push"/>
+                <action android:name="cn.wehax.whatup.appgotoruning"/>
+            </intent-filter>
+        </receiver>
+
+        <!--LeanCloud数据统计-->
+        // 在android:value中定义发布渠道
+        <meta-data
+            android:name="leancloud"
+            android:value="@string/leancloud_channel"/>
+
+        <!--Baidu Location SDK相关-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wRCDV45CvKeKAE8ltsyNhDOa"/>
+    </application>
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 添加新手引导windowManager权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--添加快捷方式权限-->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+
+
+</manifest>

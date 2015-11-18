@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/guide_view_enter_btn_bg_p_shape" android:state_pressed="true"/>
+    <item android:drawable="@drawable/guide_view_enter_btn_bg_n_shape"/>
+
+</selector>

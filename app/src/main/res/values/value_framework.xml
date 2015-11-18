@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--loading-->
+    <string name="loading_data">加载数据中,请稍候&#8230;</string>
+
+    <!--reload-->
+    <string name="tip_load_data_fail">亲，数据加载失败～</string>
+    <string name="reload_data">重新加载</string>
+
+    <dimen name="reload_btn_height">40dp</dimen>
+    <dimen name="reload_btn_width">100dp</dimen>
+
+</resources>

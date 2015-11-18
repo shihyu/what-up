@@ -1,0 +1,6 @@
+[submodule "pull-to-refresh"]
+	path = pull-to-refresh
+	url = F:\\workspace-as\\pull-to-refresh
+[submodule "internal-libraries"]
+	path = internal-libraries
+	url = F:\\workspace-as\\internal-libraries

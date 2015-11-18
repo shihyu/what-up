@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--choose cellLogin or register-->
+    <string name="register_btn_text">走起，注册一把</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登录</string>
+
+    <!--cellLogin-->
+    <string name="login_with_space">登 录</string>
+    <string name="hint_input_password">请输入密码</string>
+    <string name="use_third_party_account_login">使用以下帐号快速登录</string>
+
+    <!--ic_logo-->
+    <dimen name="logo_size">100dp</dimen>
+    <dimen name="logo_margin_top">80dp</dimen>
+
+</resources>

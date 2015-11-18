@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_root_layout">
+
+    <!-- 涂鸦控件 -->
+    <cn.wehax.whatup.vp.chat.widget.GraffitiView
+        android:id="@+id/chat_graffiti_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- 用户绘制文本文字层-->
+    <RelativeLayout
+        android:id="@+id/rl_text_draw_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!--用于显示文本消息-->
+            <cn.wehax.whatup.vp.chat.widget.ChatMessageList
+                android:id="@+id/chat_content_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:background="@color/transparent"
+                android:divider="@null"
+                android:focusable="false"
+                android:transcriptMode="alwaysScroll"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:stackFromBottom="false" />
+        </FrameLayout>
+        <!-- 底部控件 -->
+
+        <include
+            android:id="@+id/chat_bottom_layout"
+            layout="@layout/part_chat_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!-- 加载进度控件 -->
+    <LinearLayout
+        android:id="@+id/chat_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+
+</FrameLayout>

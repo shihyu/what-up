@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+     手机输入框，要求：
+    （select_image_from_native_btn_bg_selector）手机限制11位
+    （2）点击自动关联数字键盘
+    -->
+    <EditText
+        style="@style/CommonEidtText"
+        android:hint="@string/phone_number"
+        android:layout_marginTop="@dimen/common_circle_btn_margin"
+        android:drawableLeft="@drawable/ic_phone"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:id="@+id/phone_number_edit_text"/>
+
+    <Button
+        style="@style/CommonBtn"
+        android:text="@string/next"
+        android:layout_marginTop="@dimen/common_divider_height_mid"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:background="@drawable/common_orange_btn_bg_selector"
+        android:id="@+id/cell_register_next_btn"/>
+
+</LinearLayout>

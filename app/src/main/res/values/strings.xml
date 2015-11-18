@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">你在干嘛</string>
+    <string name="action_settings">Settings</string>
+    <string name="relationTips">到 \"首页\" 扫一扫，找到更多快乐</string>
+</resources>

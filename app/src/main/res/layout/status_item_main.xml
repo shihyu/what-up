@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="180dp">
+<RelativeLayout
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/rl_status_main">
+    <ImageView
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:id="@+id/iv_status_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/status_border_selector" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="68dp"
+    android:layout_height="68dp"
+    android:layout_below="@+id/rl_status_main"
+    android:id="@+id/rl_avatar_main"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="7dp"
+    android:layout_marginStart="7dp">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="3dp"
+       android:layout_marginLeft="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_avatar_main"
+        android:src="@drawable/default_avatar"/>
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+         android:src="@drawable/avatar_border_selector"
+        android:id="@+id/iv_avatar_sex"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:text="100m"
+        android:id="@+id/tv_distance_main"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp" />
+
+</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/setting_chat_bubble"
+        style="@style/CommonBtn"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:layout_marginTop="@dimen/common_divider_height_large"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/setting_btn_padding"
+        android:background="@drawable/common_transparent_white_btn_bg"
+        android:text="@string/setting_chat_bubble"/>
+
+    <Button
+        android:id="@+id/setting_clear_cache"
+        style="@style/CommonBtn"
+        android:layout_below="@id/setting_chat_bubble"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:layout_marginTop="@dimen/common_divider_height_mid"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/setting_btn_padding"
+        android:background="@drawable/common_transparent_white_btn_bg"
+        android:text="@string/setting_clear_cache"/>
+
+
+    <Button
+        android:id="@+id/setting_logout"
+        style="@style/CommonBtn"
+        android:layout_marginLeft="@dimen/common_view_left_right_margin"
+        android:layout_marginRight="@dimen/common_view_left_right_margin"
+        android:layout_marginBottom="@dimen/common_divider_height_large"
+        android:background="@drawable/common_orange_btn_bg_selector"
+        android:layout_alignParentBottom="true"
+        android:text="@string/setting_logout"/>
+
+</RelativeLayout>

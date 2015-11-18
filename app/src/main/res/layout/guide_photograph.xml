@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#60000000"
+android:id="@+id/guideView_photograph"
+android:focusable="true">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_photograph"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="110dp"/>
+    <Button
+        android:id="@+id/take_picture_btn"
+        android:layout_width="@dimen/mid_ic_btn_size"
+        android:layout_height="@dimen/mid_ic_btn_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/take_photo_ic_btn_sel" />
+
+</RelativeLayout>

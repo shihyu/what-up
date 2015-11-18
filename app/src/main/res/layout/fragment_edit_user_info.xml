@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_divider_height_mid"
+        android:layout_marginTop="@dimen/common_divider_height_small"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/select_image_from_native_image_view"
+            style="@style/Common.CircleBtn"
+            android:layout_marginRight="@dimen/common_divider_height_mid"
+            android:src="@drawable/select_image_from_native_btn_bg_selector"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_avatar_image_view"
+            android:layout_width="@dimen/user_avatar_size"
+            android:layout_height="@dimen/user_avatar_size"
+            app:border_width="@dimen/user_avatar_border_width"
+            app:border_color="@color/user_avatar_border_color"
+            android:src="@drawable/default_avatar"/>
+
+        <ImageView
+            android:id="@+id/select_image_from_camera_image_view"
+            style="@style/Common.CircleBtn"
+            android:layout_marginLeft="@dimen/common_divider_height_mid"
+            android:src="@drawable/select_image_from_camera_btn_bg_selector"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/UserEdit.LinearLayout">
+
+        <!--昵称不能超过10个字符-->
+        <EditText
+            android:id="@+id/user_nickname_edit_text"
+            style="@style/UserEdit.EditText"
+            android:maxLength="10"
+            android:singleLine="true"/>
+
+        <ImageView
+            style="@style/UserEdit.RightArrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/UserEdit.LinearLayout"
+        android:layout_marginTop="@dimen/common_divider_height_small">
+
+        <!--个人简介限制20个字符-->
+        <EditText
+            android:id="@+id/user_introduce_edit_text"
+            style="@style/UserEdit.EditText"
+            android:maxHeight="72dp"
+            android:maxLength="20"
+            android:paddingBottom="8dp"
+            android:hint="@string/hint_introduce"
+            android:textColorHint="@color/gray_very_light"
+            android:paddingTop="8dp"/>
+
+        <ImageView
+            style="@style/UserEdit.RightArrow"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+
+    <Button
+        android:id="@+id/user_edit_sava_btn"
+        style="@style/Common.BottomBtn"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/common_divider_height_large"
+        android:text="@string/save"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/guide_background_layout">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guide_background" />
+
+    <LinearLayout
+        android:id="@+id/middle_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/background_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/guide_text_01"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/background_phone_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/guide_05" />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/CommonBtn"
+        android:layout_height="35dp"
+        android:id="@+id/fragment_last_page_enter_btn"
+        android:layout_width="165dp"
+        android:layout_alignBottom="@+id/middle_iv"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/common_orange_btn_bg_selector"
+        android:layout_marginBottom="75dp"
+        android:text="@string/enter_btn_text"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="visible"/>
+
+
+</RelativeLayout>

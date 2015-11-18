@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_message_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/chat_title_bg"
+        android:textColor="@color/chat_btn_text_color"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/bubble_view_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="78dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="58dp"
+        android:id="@+id/answer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_systemRec"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_background"
+        android:textColor="#9000"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:text="部分最新的照片会随机漂流，收到了赶紧打个招呼，问问TA在干嘛"/>
+
+</LinearLayout>

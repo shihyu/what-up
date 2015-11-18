@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="bubbleView">
+
+        <attr name="contentBackground" format="reference"/>
+        <attr name="avatar" format="reference"/>
+        <attr name="avatarBorder" format="reference" />
+        <attr name="tail" format="reference" />
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,123 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme"
+           parent="android:Theme.Black.NoTitleBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--编辑框通用样式-->
+    <style name="CommonEidtText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_view_height</item>
+        <item name="android:textColorHint">@color/gray_very_light</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:background">@drawable/common_edit_text_bg_shape</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_plus_1</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Common"/>
+
+    <!--按钮通过样式-->
+    <style name="CommonBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_view_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_plus_1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_view_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_plus_1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Common.BottomBtn" parent="Btn">
+        <item name="android:layout_marginLeft">@dimen/common_view_left_right_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_view_left_right_margin</item>
+        <item name="android:background">@drawable/common_orange_btn_bg_selector</item>
+    </style>
+
+    <style name="Common.CircleBtn">
+        <item name="android:layout_width">@dimen/common_circle_btn_size</item>
+        <item name="android:layout_height">@dimen/common_circle_btn_size</item>
+    </style>
+
+    <style name="view_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!--用户编辑页面-->
+    <style name="UserEdit"/>
+
+    <style name="UserEdit.RightArrow">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:src">@drawable/ic_right_arrow</item>
+    </style>
+
+    <style name="UserEdit.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/nickname_eidt_view_height</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@drawable/common_transparent_white_60_bg_shape</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_plus_1</item>
+    </style>
+
+    <style name="UserEdit.LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_view_left_right_margin</item>
+        <item name="android:layout_marginRight">@dimen/common_view_left_right_margin</item>
+        <item name="android:background">@drawable/common_transparent_white_70_bg_shape</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="NoAnimationTheme" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <!--举报页面-->
+    <style name="Denounce" />
+
+    <style name="Denounce.RadioBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_view_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_plus_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginBottom">@dimen/common_divider_height_small</item>
+        <item name="android:background">@drawable/denounce_radio_btn_bg_selector</item>
+    </style>
+
+</resources>

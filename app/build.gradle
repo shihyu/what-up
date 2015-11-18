@@ -1,0 +1,162 @@
+apply plugin: 'com.android.application'
+
+android {
+    //为了解决部分第三方库重复打包了META-INF的问题
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "cn.wehax.whatup"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "0.0.1-alpha"
+    }
+
+    signingConfigs {
+        nspConfig {
+            storeFile file("nvshengpai.keystore")
+            storePassword "nvshengpai"
+            keyAlias "nsp"
+            keyPassword "nvshengpai"
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            // 声明使用的签名配置
+            signingConfig signingConfigs.nspConfig
+            minifyEnabled false
+            proguardFile 'proguard-android.txt'
+        }
+        debug {
+            signingConfig signingConfigs.nspConfig
+            minifyEnabled false
+        }
+    }
+
+    lintOptions {
+        // if true, stop the gradle build if errors are found
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
+    }
+
+    productFlavors {
+        standard {
+            resValue "string", "leancloud_channel", "standard"
+        }
+
+        baidu {
+            resValue "string", "leancloud_channel", "baidu"
+        }
+
+//        qihoo {
+//            resValue "string", "leancloud_channel", "qihoo"
+//        }
+//
+//        anzhuo {
+//            resValue "string", "leancloud_channel", "anzhuo"
+//        }
+//
+//        xiaomi {
+//            resValue "string", "leancloud_channel", "xiaomi"
+//        }
+//
+//        tengxun {
+//            resValue "string", "leancloud_channel", "tengxun"
+//        }
+//
+//        sougou {
+//            resValue "string", "leancloud_channel", "sougou"
+//        }
+//
+//        anzhi {
+//            resValue "string", "leancloud_channel", "anzhi"
+//        }
+//
+//        huawei {
+//            resValue "string", "leancloud_channel", "huawei"
+//        }
+//
+//        lenovo {
+//            resValue "string", "leancloud_channel", "lenovo"
+//        }
+//
+//        meizu {
+//            resValue "string", "leancloud_channel", "meizu"
+//        }
+
+//        yingyonghui {
+//            resValue "string", "leancloud_channel", "yingyonghui"
+//        }
+//
+//        jifeng {
+//            resValue "string", "leancloud_channel", "jifeng"
+//        }
+//
+//        nduo {
+//            resValue "string", "leancloud_channel", "nduo"
+//        }
+//
+//        wandoujia {
+//            resValue "string", "leancloud_channel", "wandoujia"
+//        }
+//
+//        youyi {
+//            resValue "string", "leancloud_channel", "youyi"
+//        }
+//
+//        jingli {
+//            resValue "string", "leancloud_channel", "jingli"
+//        }
+//
+//        liantong {
+//            resValue "string", "leancloud_channel", "liantong"
+//        }
+    }
+
+}
+
+
+dependencies {
+    // 依赖libs目录中的Jar包
+    compile fileTree(dir: 'libs', include: ['*.jar', '*.so'])
+
+    // roboguice
+    compile 'org.roboguice:roboguice:3.0.1'
+    provided 'org.roboguice:roboblender:3.0.1'
+
+
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.google.code.gson:gson:2.3'
+
+    // 外部第三方库
+    compile project(':common-library')
+    compile project(':pull-to-refresh')
+
+    // 图片加载库
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+
+    // viewPagerIndicator
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
+
+    // circleImageView
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+}

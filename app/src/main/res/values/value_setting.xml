@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="setting">设置</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="setting_chat_bubble">个性气泡</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="choose_bubble">选择气泡</string>
+    <dimen name="setting_btn_padding">20dp</dimen>
+
+
+</resources>

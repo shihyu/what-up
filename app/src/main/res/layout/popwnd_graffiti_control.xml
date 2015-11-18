@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|center_horizontal"
+    android:padding="5dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/chat_color_select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/chat_color_red"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_graffiti_bg_red"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/chat_color_yellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_graffiti_bg_yellow"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/chat_color_blue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_graffiti_bg_blue"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/chat_color_white"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/chat_graffiti_bg_white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/chat_color_select_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chat_graffiti_bg_red"
+        android:text="@string/chat_select_color"
+        android:textColor="@color/chat_btn_text_color"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/chat_revoke"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_chat_revoke_selector"
+        android:text="@string/chat_revoke"
+        android:textColor="@color/chat_btn_text_color" />
+    <CheckBox
+        android:id="@+id/graffiti_switch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:button="@null"
+        android:background="@drawable/graffiti_switch_selector" />
+</LinearLayout>

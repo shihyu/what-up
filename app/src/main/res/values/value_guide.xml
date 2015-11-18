@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Indicator-->
+    <dimen name="indicator_radius">5dp</dimen>
+    <dimen name="indicator_stroke_width">1dp</dimen>
+    <color name="indicator_stroke_color">@android:color/transparent</color>
+
+    <!--enter btn-->
+    <string name="enter_btn_text">进入应用</string>
+
+</resources>

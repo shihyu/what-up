@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的背景-->
+    <item android:drawable="@drawable/status_main_bg" />
+    <!--选中时的图片-->
+    <item android:state_selected="true" android:drawable="@drawable/selected_status_main_bg"  />
+    <!--按压时的图片-->
+    <item android:state_pressed="true" android:drawable="@drawable/selected_status_main_bg"  />
+
+</selector>

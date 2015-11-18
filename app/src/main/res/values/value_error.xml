@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_number_is_not_registered">手机号码尚未注册过</string>
+    <string name="USER_MOBILE_PHONENUMBER_TAKEN">手机号已被注册</string>
+
+    <string name="network_not_available">网络连接异常</string>
+
+    <string name="verify_code_fail">验证码错误</string>
+
+    <string name="complete_user_info_fail">完善个人资料失败</string>
+
+</resources>

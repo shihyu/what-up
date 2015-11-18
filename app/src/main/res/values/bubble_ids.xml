@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="bubble_content"/>
+    <item type="id" name="bubble_avatar"/>
+    <item type="id" name="bubble_avatar_border"/>
+    <item type="id" name="bubble_tail"/>
+</resources>

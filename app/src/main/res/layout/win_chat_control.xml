@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chat_graffiti_bg_red"
+        android:text="@string/chat_select_color"
+        android:textColor="@color/chat_btn_text_color"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="150dp"
+        android:focusable="true"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_chat_revoke"
+        android:text="@string/chat_revoke"
+        android:textColor="@color/chat_btn_text_color"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="5dp"
+        android:onClick="reCall"/>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mini_ic_btn_size">50dp</dimen>
+    <dimen name="small_ic_btn_size">66dp</dimen>
+    <dimen name="thumbnail_container_size">60dp</dimen>
+
+    <dimen name="mid_ic_btn_size">70dp</dimen>
+    <dimen name="small_ic_btn_size_half">33dp</dimen>
+</resources>

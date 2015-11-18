@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="topLeftRadius">8dp</dimen>
+    <dimen name="topRightRadius">8dp</dimen>
+    <dimen name="bottomLeftRadius">3dp</dimen>
+    <dimen name="bottomRightRadius">3dp</dimen>
+
+    <dimen name="stroke_width">1px</dimen>
+
+    <color name="bulb_solid_color">#fcf6d7</color>
+    <color name="bulb_stroke_color">#060001</color>
+    <color name="bulb_text_color">#000000</color>
+
+
+    <color name="cat_solid_color">#ff9696</color>
+    <color name="cat_stroke_color">#d74d4d</color>
+    <color name="cat_text_color">#000000</color>
+
+    <color name="doraemon_solid_color">#51cbff</color>
+    <color name="doraemon_stroke_color">#000000</color>
+    <color name="doraemon_text_color">#000000</color>
+
+    <color name="hamburg_solid_color">#ffae00</color>
+    <color name="hamburg_stroke_color">#9e4c0e</color>
+    <color name="hamburg_text_color">#000000</color>
+
+    <color name="hulk_solid_color">#2cc924</color>
+    <color name="hulk_stroke_color">#013d01</color>
+    <color name="hulk_text_color">#000000</color>
+
+    <color name="kitty_solid_color">#ffffff</color>
+    <color name="kitty_stroke_color">#000000</color>
+    <color name="kitty_text_color">#000000</color>
+
+    <color name="panda_solid_color">#ffffff</color>
+    <color name="panda_stroke_color">#000000</color>
+    <color name="panda_text_color">#000000</color>
+
+    <color name="pig_solid_color">#ea4848</color>
+    <color name="pig_stroke_color">#ac2323</color>
+    <color name="pig_text_color">#000000</color>
+
+
+    <color name="steve_solid_color">#436ad9</color>
+    <color name="steve_stroke_color">#00258e</color>
+    <color name="steve_text_color">#000000</color>
+
+    <color name="thor_solid_color">#d8d8d8</color>
+    <color name="thor_stroke_color">#000000</color>
+    <color name="thor_text_color">#000000</color>
+
+    <color name="tony_solid_color">#e54428</color>
+    <color name="tony_stroke_color">#761606</color>
+    <color name="tony_text_color">#000000</color>
+
+
+</resources>

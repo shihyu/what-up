@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="whimage_bg_color">#fff</color>
+    <color name="whimage_topbar_bg_color">#80000000</color>
+    <color name="whimage_topbar_text_color">#fff</color>
+    <dimen name="whimage_topbar_height">40dp</dimen>
+    <string name="whimage_finish_text">完成</string>
+    <color name="whimage_finish_text_color">#ff495a</color>
+    <color name="whimage_item_bg_n">#00000000</color>
+    <color name="whimage_item_bg_p">#50000000</color>
+</resources>

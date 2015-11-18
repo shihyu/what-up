@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register">注 册</string>
+    <string name="phone_number">手机号</string>
+    <string name="next">下一步</string>
+    <string name="set_password">设置密码</string>
+    <string name="remind_user_verify_code_sended">短信验证码已经发送至以下号码：\n%s</string>
+    <string name="hit_verify_code">输入验证码</string>
+    <string name="hit_password">设置6-12位数字、英文密码</string>
+
+    <!--完善个人资料-->
+    <string name="complete_user_info">完善个人资料</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>、
+    <string name="next_go">下一步，起航啦</string>
+    <string name="default_introduce">这个人很懒，什么都没有留下</string>
+
+    <dimen name="user_avatar_size">100dp</dimen>
+
+    <string name="sex_male">高富帅</string>
+    <string name="sex_female">白富美</string>
+    <dimen name="sex_ic_size">14dp</dimen>
+
+    <dimen name="nickname_text_view_width">60dp</dimen>
+    <dimen name="nickname_eidt_view_height">45dp</dimen>
+
+    <!--digits-->
+    <string name="digits_for_password">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+</resources>

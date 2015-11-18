@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+
+    <cn.wehax.whatup.ar.vision.ARView
+        android:id="@+id/ar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!--<com.google.vrtoolkit.cardboard.CardboardView-->
+    <!--android:id="@+id/cardboard_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <RelativeLayout
+        android:id="@+id/touch_receiver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/overturn_camera"
+            android:layout_width="@dimen/small_ic_btn_size"
+            android:layout_height="@dimen/small_ic_btn_size"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:cropToPadding="true"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/overturn_camera_ic_btn_sel"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mid_ic_btn_size"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/small_ic_btn_size"
+            android:layout_height="@dimen/mid_ic_btn_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/relation_btn"
+                android:layout_width="@dimen/small_ic_btn_size"
+                android:layout_height="@dimen/small_ic_btn_size"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/relation_ic_btn_sel"/>
+
+            <View
+                android:id="@+id/unread_message_view"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/armain_circle"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/take_picture_btn"
+            android:layout_width="@dimen/mid_ic_btn_size"
+            android:layout_height="@dimen/mid_ic_btn_size"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/take_photo_ic_btn_sel"/>
+
+        <RelativeLayout
+            android:id="@+id/info"
+            android:layout_width="@dimen/small_ic_btn_size"
+            android:layout_height="@dimen/small_ic_btn_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/info_avatar_container"
+                android:layout_width="@dimen/small_ic_btn_size"
+                android:layout_height="@dimen/small_ic_btn_size"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/info_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cropToPadding="true"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"/>
+
+                <cn.wehax.whatup.support.widget.AvatarMuskView
+                    android:layout_width="@dimen/small_ic_btn_size"
+                    android:layout_height="@dimen/small_ic_btn_size"
+                    app:borderWidth="3dp"
+                    app:pointRadius="3dp"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/info_alert_btn"
+                android:layout_width="@dimen/small_ic_btn_size"
+                android:layout_height="@dimen/small_ic_btn_size"
+                android:background="@drawable/info_send_status_failed_selector"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/info_btn"
+                android:layout_width="@dimen/small_ic_btn_size"
+                android:layout_height="@dimen/small_ic_btn_size"
+                android:background="@drawable/info_ic_btn_sel"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/status_thumbnail"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/bottom_container"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/status_thumb_border"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#19a6ff" />
+
+</RelativeLayout>
